@@ -3,7 +3,7 @@ const fs = require("fs");
 const results = [];
 const data = [];
 
-fs.createReadStream("data.csv")
+fs.createReadStream("Attendance Details.csv")
   .pipe(csv())
   .on("data", (data) => results.push(data))
   .on("end", () => {
